@@ -1,4 +1,6 @@
 [Ver index](./index.html)
+
+
 About Widoco output
 ===================
 The purpose of Widoco is to reuse and integrate existing tools for documentation, plus the set of features listed below:
