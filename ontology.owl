@@ -1,0 +1,1078 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#"
+     xml:base="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:EUDAMEDUOC="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>Dispositivo implicado en el incidente</rdfs:comment>
+        <rdfs:isDefinedBy>Jlopezbaez</rdfs:isDefinedBy>
+        <rdfs:label>affectsDevice</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+        <rdfs:comment>Riesgo al que está asociado el incidente</rdfs:comment>
+        <rdfs:isDefinedBy>Jlopezbaez</rdfs:isDefinedBy>
+        <rdfs:label>associatedToRisk</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>Incicdente que propicio que se llevara a cao la accion</rdfs:comment>
+        <rdfs:isDefinedBy>Jlopezbaez</rdfs:isDefinedBy>
+        <rdfs:label>derivedFromIncident</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasCountry -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasCountry">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Country"/>
+        <rdfs:comment>Pais del fabricante</rdfs:comment>
+        <rdfs:label>hasCountry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+        <rdfs:comment>Fabricante del dispositivo</rdfs:comment>
+        <rdfs:isDefinedBy>Jlopezbaez</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="es">fabricadoPor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+        <rdfs:comment>Fabricante que reporto el incidente</rdfs:comment>
+        <rdfs:isDefinedBy>Jlopezbaez</rdfs:isDefinedBy>
+        <rdfs:label>reportedByManufacturer</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Descripción pormenorizada</rdfs:comment>
+        <rdfs:isDefinedBy>Jlopezbaez</rdfs:isDefinedBy>
+        <rdfs:label>hasDescription</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDeviceName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDeviceName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Nombredispos</rdfs:comment>
+        <rdfs:isDefinedBy>Jlopezbaez</rdfs:isDefinedBy>
+        <rdfs:label>hasDeviceName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Define si el dispositivo es implantable</rdfs:comment>
+        <rdfs:isDefinedBy>Jlopezbaez</rdfs:isDefinedBy>
+        <rdfs:label>isImplantable</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Define la edad del paciente si se conoce,. si no NA</rdfs:comment>
+        <rdfs:isDefinedBy>Jlopezbaez</rdfs:isDefinedBy>
+        <rdfs:label>patientAge</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment>La fecha en que se reporta el incidente</rdfs:comment>
+        <rdfs:isDefinedBy>Jlopezbaez</rdfs:isDefinedBy>
+        <rdfs:label>reportDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveDevice -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveDevice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Dispositivo activo, subclase de dispositivo</rdfs:comment>
+        <rdfs:label>ActiveDevice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveImplant -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveImplant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>iImplante activo</rdfs:comment>
+        <rdfs:label>Activeimplant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Country -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Country">
+        <rdfs:comment>Pais</rdfs:comment>
+        <rdfs:isDefinedBy>Jlopezbaez</rdfs:isDefinedBy>
+        <rdfs:label>Country</rdfs:label>
+        <owl:sameAs>https://dbpedia.org/page/Country</owl:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Dispositivos médicos de alto riesgo y dispositivos de diagnóstico in vitro</rdfs:comment>
+        <rdfs:isDefinedBy>Jlopezbaez</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="es">Dispositivo</rdfs:label>
+        <owl:sameAs>https://dbpedia.org/page/Medical_device</owl:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>acciones correctivas de seguridad en campo (FSCA) vinculadas a incidentes.</rdfs:comment>
+        <rdfs:isDefinedBy>Jlopezbaez</rdfs:isDefinedBy>
+        <rdfs:label>FSCA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ImplantableActiveDevice -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ImplantableActiveDevice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Dispositivo implantable activo</rdfs:comment>
+        <rdfs:label>ImplantableActiveDevice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InSituCorrection -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InSituCorrection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Acciiones realizadas in situ</rdfs:comment>
+        <rdfs:label>InSituCorrection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Incidentes relacionados con los dispositivos médicos</rdfs:comment>
+        <rdfs:isDefinedBy>Jlopezbaez</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="es">Incidente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InjuryRisk -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InjuryRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+        <rdfs:comment>Riesgo de dañis</rdfs:comment>
+        <rdfs:label>InjuryRisk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InterferenceRisk -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InterferenceRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+        <rdfs:comment>Riesgo de interferencias</rdfs:comment>
+        <rdfs:label>InterferenceRisk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MalfunctionRisk -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MalfunctionRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+        <rdfs:comment>Riesgo de fallo de funcionamiento</rdfs:comment>
+        <rdfs:label>MalfuctionRisk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer">
+        <rdfs:comment>fabricantes europeos</rdfs:comment>
+        <rdfs:isDefinedBy>Jlopezbaez</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="es">Fabricante</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#NearMissIncident -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#NearMissIncident">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Incidente de casi pérdida</rdfs:comment>
+        <rdfs:label>NearMissIncident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Recall -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Recall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Retirada de dispositivos</rdfs:comment>
+        <rdfs:label>Recall</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk">
+        <rdfs:comment>riesgos identificados según la nomenclatura IMDRF</rdfs:comment>
+        <rdfs:isDefinedBy>Jlopezbaez</rdfs:isDefinedBy>
+        <rdfs:label>Riesgo</rdfs:label>
+        <owl:sameAs>https://dbpedia.org/page/Risk</owl:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SafetyAlert -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SafetyAlert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Alerta de seguridad</rdfs:comment>
+        <rdfs:label>SafetyAlert</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Incidente serio</rdfs:comment>
+        <rdfs:label>SeriousIncident</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#UserNotice -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#UserNotice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Aviso a los usuarios</rdfs:comment>
+        <rdfs:label>UserNotice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ImplantableActiveDevice"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasManufacturer rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001"/>
+        <hasDeviceName>HeartMate 3 LVAD</hasDeviceName>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isImplantable>
+        <rdfs:label>DEV-001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveImplant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasManufacturer rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001"/>
+        <hasDeviceName>Micra AV Transcatheter Pacing System</hasDeviceName>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isImplantable>
+        <rdfs:label>DEV-002</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SafetyAlert"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+            </owl:Restriction>
+        </rdf:type>
+        <derivedFromIncident rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001"/>
+        <rdfs:label>FSCA-001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Recall"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+            </owl:Restriction>
+        </rdf:type>
+        <derivedFromIncident rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002"/>
+        <rdfs:label>FSCA-002</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <affectsDevice rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-001"/>
+        <asociatedToRisk rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-003"/>
+        <reportedByManufacturer rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001"/>
+        <hasDescription>Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography.</hasDescription>
+        <patientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</patientAge>
+        <rdfs:label>INC-001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <affectsDevice rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-002"/>
+        <asociatedToRisk rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-009"/>
+        <reportedByManufacturer rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001"/>
+        <hasDescription>Micra AV pacemaker reached elective replacement indicator 14 months earlier than expected longevity specification.</hasDescription>
+        <patientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</patientAge>
+        <rdfs:label>INC-002</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Ireland -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Ireland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Country"/>
+        <rdfs:label>Ireland</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+        <hasCountry rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Ireland"/>
+        <rdfs:label>MAN-001</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer"/>
+        <rdfs:label>MAN-002</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-003 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InjuryRisk"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+        <rdfs:label>RSK-003</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-009 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-009">
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MalfunctionRisk"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk"/>
+        <rdfs:label>RSK-009</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:isDefinedBy>Jlopezbaez</rdfs:isDefinedBy>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/m">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/i">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveImplant"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/d"/>
+                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/d"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/m"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/i"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/d"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

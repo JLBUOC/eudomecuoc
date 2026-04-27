@@ -1,0 +1,663 @@
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#sameAs
+<http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Dispositivo implicado en el incidente" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Jlopezbaez" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> <http://www.w3.org/2000/01/rdf-schema#label> "affectsDevice" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Riesgo al que está asociado el incidente" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Jlopezbaez" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> <http://www.w3.org/2000/01/rdf-schema#label> "associatedToRisk" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> <http://www.w3.org/2000/01/rdf-schema#range> _:genid9 .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> <http://www.w3.org/2000/01/rdf-schema#range> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> <http://www.w3.org/2000/01/rdf-schema#range> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Incicdente que propicio que se llevara a cao la accion" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Jlopezbaez" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> <http://www.w3.org/2000/01/rdf-schema#label> "derivedFromIncident" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasCountry
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasCountry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Country> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Pais del fabricante" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasCountry> <http://www.w3.org/2000/01/rdf-schema#label> "hasCountry" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Fabricante del dispositivo" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Jlopezbaez" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "fabricadoPor"@es .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Fabricante que reporto el incidente" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Jlopezbaez" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "reportedByManufacturer" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Descripción pormenorizada" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Jlopezbaez" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription> <http://www.w3.org/2000/01/rdf-schema#label> "hasDescription" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDeviceName
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDeviceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDeviceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDeviceName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDeviceName> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDeviceName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDeviceName> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombredispos" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDeviceName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Jlopezbaez" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDeviceName> <http://www.w3.org/2000/01/rdf-schema#label> "hasDeviceName" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable> <http://www.w3.org/2000/01/rdf-schema#comment> "Define si el dispositivo es implantable" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Jlopezbaez" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable> <http://www.w3.org/2000/01/rdf-schema#label> "isImplantable" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Define la edad del paciente si se conoce,. si no NA" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Jlopezbaez" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge> <http://www.w3.org/2000/01/rdf-schema#label> "patientAge" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportDate
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportDate> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportDate> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportDate> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportDate> <http://www.w3.org/2000/01/rdf-schema#comment> "La fecha en que se reporta el incidente" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Jlopezbaez" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportDate> <http://www.w3.org/2000/01/rdf-schema#label> "reportDate" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveDevice
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Dispositivo activo, subclase de dispositivo" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "ActiveDevice" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveImplant
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveImplant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#comment> "iImplante activo" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveImplant> <http://www.w3.org/2000/01/rdf-schema#label> "Activeimplant" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Country
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Pais" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Country> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Jlopezbaez" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Country> <http://www.w3.org/2002/07/owl#sameAs> "https://dbpedia.org/page/Country" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "Dispositivos médicos de alto riesgo y dispositivos de diagnóstico in vitro" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Jlopezbaez" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Dispositivo"@es .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> <http://www.w3.org/2002/07/owl#sameAs> "https://dbpedia.org/page/Medical_device" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA> <http://www.w3.org/2000/01/rdf-schema#comment> "acciones correctivas de seguridad en campo (FSCA) vinculadas a incidentes." .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Jlopezbaez" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ImplantableActiveDevice
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ImplantableActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Dispositivo implantable activo" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "ImplantableActiveDevice" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InSituCorrection
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InSituCorrection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#comment> "Acciiones realizadas in situ" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InSituCorrection> <http://www.w3.org/2000/01/rdf-schema#label> "InSituCorrection" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "Incidentes relacionados con los dispositivos médicos" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Jlopezbaez" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incidente"@es .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InjuryRisk
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InjuryRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Riesgo de dañis" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InjuryRisk> <http://www.w3.org/2000/01/rdf-schema#label> "InjuryRisk" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InterferenceRisk
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InterferenceRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InterferenceRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InterferenceRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Riesgo de interferencias" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InterferenceRisk> <http://www.w3.org/2000/01/rdf-schema#label> "InterferenceRisk" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MalfunctionRisk
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MalfunctionRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Riesgo de fallo de funcionamiento" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MalfunctionRisk> <http://www.w3.org/2000/01/rdf-schema#label> "MalfuctionRisk" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "fabricantes europeos" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Jlopezbaez" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Fabricante"@es .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#NearMissIncident
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#NearMissIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Incidente de casi pérdida" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#NearMissIncident> <http://www.w3.org/2000/01/rdf-schema#label> "NearMissIncident" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Recall
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Recall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Recall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Recall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Recall> <http://www.w3.org/2000/01/rdf-schema#comment> "Retirada de dispositivos" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Recall> <http://www.w3.org/2000/01/rdf-schema#label> "Recall" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "riesgos identificados según la nomenclatura IMDRF" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Jlopezbaez" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Riesgo" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> <http://www.w3.org/2002/07/owl#sameAs> "https://dbpedia.org/page/Risk" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SafetyAlert
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SafetyAlert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#comment> "Alerta de seguridad" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SafetyAlert> <http://www.w3.org/2000/01/rdf-schema#label> "SafetyAlert" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Incidente serio" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#label> "SeriousIncident" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#UserNotice
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#UserNotice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#UserNotice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#UserNotice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#UserNotice> <http://www.w3.org/2000/01/rdf-schema#comment> "Aviso a los usuarios" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#UserNotice> <http://www.w3.org/2000/01/rdf-schema#label> "UserNotice" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-001
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ImplantableActiveDevice> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-001> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-001> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDeviceName> "HeartMate 3 LVAD" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-001> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-001> <http://www.w3.org/2000/01/rdf-schema#label> "DEV-001" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-002
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveImplant> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-002> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-002> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDeviceName> "Micra AV Transcatheter Pacing System" .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-002> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-002> <http://www.w3.org/2000/01/rdf-schema#label> "DEV-002" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-001
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SafetyAlert> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-001> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-001> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA-001" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-002
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Recall> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-002> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-002> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA-002" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-001> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-003> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription> "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography." .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge> "58"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001> <http://www.w3.org/2000/01/rdf-schema#label> "INC-001" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid55 .
+_:genid55 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> _:genid57 .
+_:genid57 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-002> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-009> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription> "Micra AV pacemaker reached elective replacement indicator 14 months earlier than expected longevity specification." .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge> "72"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002> <http://www.w3.org/2000/01/rdf-schema#label> "INC-002" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Ireland
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Ireland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Ireland> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Country> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Ireland> <http://www.w3.org/2000/01/rdf-schema#label> "Ireland" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasCountry> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Ireland> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001> <http://www.w3.org/2000/01/rdf-schema#label> "MAN-001" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-002
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-002> <http://www.w3.org/2000/01/rdf-schema#label> "MAN-002" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-003
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InjuryRisk> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-003> <http://www.w3.org/2000/01/rdf-schema#label> "RSK-003" .
+# 
+# http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-009
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MalfunctionRisk> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-009> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-009> <http://www.w3.org/2000/01/rdf-schema#label> "RSK-009" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.w3.org/2002/07/owl#Thing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Jlopezbaez" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid58 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid58 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid58 <http://www.w3.org/2000/01/rdf-schema#label> "S3" .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid58 <http://www.w3.org/2003/11/swrl#body> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid60 .
+_:genid60 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/d> .
+_:genid60 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveImplant> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid58 <http://www.w3.org/2003/11/swrl#head> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid62 .
+_:genid62 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid62 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/d> .
+_:genid62 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid63 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid63 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid63 <http://www.w3.org/2000/01/rdf-schema#label> "S2" .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid63 <http://www.w3.org/2003/11/swrl#body> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid65 .
+_:genid65 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/d> .
+_:genid65 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/i> .
+_:genid65 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid67 .
+_:genid67 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/m> .
+_:genid67 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/d> .
+_:genid67 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid69 .
+_:genid69 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/d> .
+_:genid69 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid63 <http://www.w3.org/2003/11/swrl#head> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid71 .
+_:genid71 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/d> .
+_:genid71 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+ <title>EUADMEDUOC</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC","name":"EUADMEDUOC", "headline":"Document describing the ontology http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC", "dateReleased":"Mon Apr 27 01:58:47 CEST 2026"}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>EUADMEDUOC</h1>
+
+
+<dl>
+<dt>Latest version:</dt>
+<dd><a href="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC">http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC</a></dd>
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://insertlicenseURIhere.example.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.example.org" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd></dl>
+
+<hr/>
+</div>
+<div class="status">
+<div>
+<span>Ontology Specification Draft</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b></b></td><td>&lt;http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC&gt;</td></tr>
+<tr><td><b>EUDAMEDUOC</b></td><td>&lt;http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#&gt;</td></tr>
+<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC/&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+<tr><td><b>swrl</b></td><td>&lt;http://www.w3.org/2003/11/swrl#&gt;</td></tr>
+<tr><td><b>swrla</b></td><td>&lt;http://swrl.stanford.edu/ontologies/3.3/swrla.owl#&gt;</td></tr>
+<tr><td><b>swrlb</b></td><td>&lt;http://www.w3.org/2003/11/swrlb#&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">eudameduoc: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#ActiveDevice"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveDevice">ActiveDevice</a>
+   </li>
+   <li>
+      <a href="#ActiveImplant"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveImplant">Activeimplant</a>
+   </li>
+   <li>
+      <a href="#Country"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Country">Country</a>
+   </li>
+   <li>
+      <a href="#Device"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a>
+   </li>
+   <li>
+      <a href="#Manufacturer"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer">Fabricante</a>
+   </li>
+   <li>
+      <a href="#FSCA"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA">FSCA</a>
+   </li>
+   <li>
+      <a href="#ImplantableActiveDevice"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ImplantableActiveDevice">ImplantableActiveDevice</a>
+   </li>
+   <li>
+      <a href="#Incident"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident">Incidente</a>
+   </li>
+   <li>
+      <a href="#InjuryRisk"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InjuryRisk">InjuryRisk</a>
+   </li>
+   <li>
+      <a href="#InSituCorrection"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InSituCorrection">InSituCorrection</a>
+   </li>
+   <li>
+      <a href="#InterferenceRisk"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InterferenceRisk">InterferenceRisk</a>
+   </li>
+   <li>
+      <a href="#MalfunctionRisk"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MalfunctionRisk">MalfuctionRisk</a>
+   </li>
+   <li>
+      <a href="#NearMissIncident"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#NearMissIncident">NearMissIncident</a>
+   </li>
+   <li>
+      <a href="#Recall"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Recall">Recall</a>
+   </li>
+   <li>
+      <a href="#Risk"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk">Riesgo</a>
+   </li>
+   <li>
+      <a href="#SafetyAlert"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SafetyAlert">SafetyAlert</a>
+   </li>
+   <li>
+      <a href="#SeriousIncident"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident">SeriousIncident</a>
+   </li>
+   <li>
+      <a href="#UserNotice"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#UserNotice">UserNotice</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#affectsDevice"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice">affectsDevice</a>
+   </li>
+   <li>
+      <a href="#asociatedToRisk"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk">associatedToRisk</a>
+   </li>
+   <li>
+      <a href="#derivedFromIncident"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident">derivedFromIncident</a>
+   </li>
+   <li>
+      <a href="#hasManufacturer"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer">fabricadoPor</a>
+   </li>
+   <li>
+      <a href="#hasCountry"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasCountry">hasCountry</a>
+   </li>
+   <li>
+      <a href="#reportedByManufacturer"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer">reportedByManufacturer</a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#hasDescription"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription">hasDescription</a>
+   </li>
+   <li>
+      <a href="#hasDeviceName"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDeviceName">hasDeviceName</a>
+   </li>
+   <li>
+      <a href="#isImplantable"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable">isImplantable</a>
+   </li>
+   <li>
+      <a href="#patientAge"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge">patientAge</a>
+   </li>
+   <li>
+      <a href="#reportDate"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportDate">reportDate</a>
+   </li>
+</ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#DEV-001"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-001">DEV-001</a>
+   </li>
+   <li>
+      <a href="#DEV-002"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-002">DEV-002</a>
+   </li>
+   <li>
+      <a href="#FSCA-001"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-001">FSCA-001</a>
+   </li>
+   <li>
+      <a href="#FSCA-002"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-002">FSCA-002</a>
+   </li>
+   <li>
+      <a href="#INC-001"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001">INC-001</a>
+   </li>
+   <li>
+      <a href="#INC-002"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002">INC-002</a>
+   </li>
+   <li>
+      <a href="#Ireland"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Ireland">Ireland</a>
+   </li>
+   <li>
+      <a href="#MAN-001"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001">MAN-001</a>
+   </li>
+   <li>
+      <a href="#MAN-002"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-002">MAN-002</a>
+   </li>
+   <li>
+      <a href="#RSK-003"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-003">RSK-003</a>
+   </li>
+   <li>
+      <a href="#RSK-009"
+         title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-009">RSK-009</a>
+   </li>
+</ul><h4> SWRL Rules </h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#d4e1369">S2</a>
+   </li>
+   <li>
+      <a href="#d4e1308">S3</a>
+   </li>
+</ul><iframe src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">eudameduoc: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.
+
+</span></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for eudameduoc classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by eudameduoc.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#ActiveDevice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveDevice">ActiveDevice</a></li>
+  <li><a href="#ActiveImplant" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveImplant">Activeimplant</a></li>
+  <li><a href="#Country" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Country">Country</a></li>
+  <li><a href="#Device" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a></li>
+  <li><a href="#Manufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer">Fabricante</a></li>
+  <li><a href="#FSCA" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA">FSCA</a></li>
+  <li><a href="#ImplantableActiveDevice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ImplantableActiveDevice">ImplantableActiveDevice</a></li>
+  <li><a href="#Incident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident">Incidente</a></li>
+  <li><a href="#InjuryRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InjuryRisk">InjuryRisk</a></li>
+  <li><a href="#InSituCorrection" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InSituCorrection">InSituCorrection</a></li>
+  <li><a href="#InterferenceRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InterferenceRisk">InterferenceRisk</a></li>
+  <li><a href="#MalfunctionRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MalfunctionRisk">MalfuctionRisk</a></li>
+  <li><a href="#NearMissIncident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#NearMissIncident">NearMissIncident</a></li>
+  <li><a href="#Recall" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Recall">Recall</a></li>
+  <li><a href="#Risk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk">Riesgo</a></li>
+  <li><a href="#SafetyAlert" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SafetyAlert">SafetyAlert</a></li>
+  <li><a href="#SeriousIncident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident">SeriousIncident</a></li>
+  <li><a href="#UserNotice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#UserNotice">UserNotice</a></li>
+ </ul>
+ <div class="entity" id="ActiveDevice">
+  <h3>ActiveDevice<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveDevice</p>
+  <div class="comment">
+   <span class="markdown">Dispositivo activo, subclase de dispositivo</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ActiveImplant">
+  <h3>Activeimplant<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveImplant</p>
+  <div class="comment">
+   <span class="markdown">iImplante activo</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#DEV-002" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-002">DEV-002</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Country">
+  <h3>Country<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Country</p>
+  <div class="comment">
+   <span class="markdown">Pais</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    Jlopezbaez
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasCountry" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasCountry">hasCountry</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Ireland" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Ireland">Ireland</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Device">
+  <h3>Dispositivo<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device</p>
+  <div class="comment">
+   <span class="markdown">Dispositivos médicos de alto riesgo y dispositivos de diagnóstico in vitro</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    Jlopezbaez
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#ActiveDevice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveDevice">ActiveDevice</a> <sup class="type-c" title="class">c</sup>, <a href="#ActiveImplant" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveImplant">Activeimplant</a> <sup class="type-c" title="class">c</sup>, <a href="#ImplantableActiveDevice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ImplantableActiveDevice">ImplantableActiveDevice</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer">fabricadoPor</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasDeviceName" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDeviceName">hasDeviceName</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isImplantable" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable">isImplantable</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#affectsDevice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice">affectsDevice</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#DEV-001" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-001">DEV-001</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#DEV-002" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-002">DEV-002</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Manufacturer">
+  <h3>Fabricante<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer</p>
+  <div class="comment">
+   <span class="markdown">fabricantes europeos</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    Jlopezbaez
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasCountry" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasCountry">hasCountry</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer">fabricadoPor</a> <sup class="type-op" title="object property">op</sup>, <a href="#reportedByManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer">reportedByManufacturer</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#MAN-001" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001">MAN-001</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#MAN-002" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-002">MAN-002</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="FSCA">
+  <h3>FSCA<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA</p>
+  <div class="comment">
+   <span class="markdown">acciones correctivas de seguridad en campo (FSCA) vinculadas a incidentes.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    Jlopezbaez
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#InSituCorrection" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InSituCorrection">InSituCorrection</a> <sup class="type-c" title="class">c</sup>, <a href="#Recall" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Recall">Recall</a> <sup class="type-c" title="class">c</sup>, <a href="#SafetyAlert" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SafetyAlert">SafetyAlert</a> <sup class="type-c" title="class">c</sup>, <a href="#UserNotice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#UserNotice">UserNotice</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#derivedFromIncident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident">derivedFromIncident</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasDescription" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription">hasDescription</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#FSCA-001" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-001">FSCA-001</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#FSCA-002" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-002">FSCA-002</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#INC-001" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001">INC-001</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#INC-002" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002">INC-002</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ImplantableActiveDevice">
+  <h3>ImplantableActiveDevice<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ImplantableActiveDevice</p>
+  <div class="comment">
+   <span class="markdown">Dispositivo implantable activo</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#DEV-001" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-001">DEV-001</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Incident">
+  <h3>Incidente<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident</p>
+  <div class="comment">
+   <span class="markdown">Incidentes relacionados con los dispositivos médicos</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    Jlopezbaez
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#NearMissIncident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#NearMissIncident">NearMissIncident</a> <sup class="type-c" title="class">c</sup>, <a href="#SeriousIncident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident">SeriousIncident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#affectsDevice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice">affectsDevice</a> <sup class="type-op" title="object property">op</sup>, <a href="#asociatedToRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk">associatedToRisk</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasDescription" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription">hasDescription</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#patientAge" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge">patientAge</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#reportDate" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportDate">reportDate</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#reportedByManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer">reportedByManufacturer</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#derivedFromIncident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident">derivedFromIncident</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#INC-001" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001">INC-001</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#INC-002" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002">INC-002</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="InjuryRisk">
+  <h3>InjuryRisk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InjuryRisk</p>
+  <div class="comment">
+   <span class="markdown">Riesgo de dañis</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk">Riesgo</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#RSK-003" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-003">RSK-003</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="InSituCorrection">
+  <h3>InSituCorrection<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InSituCorrection</p>
+  <div class="comment">
+   <span class="markdown">Acciiones realizadas in situ</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#FSCA" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="InterferenceRisk">
+  <h3>InterferenceRisk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InterferenceRisk</p>
+  <div class="comment">
+   <span class="markdown">Riesgo de interferencias</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk">Riesgo</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MalfunctionRisk">
+  <h3>MalfuctionRisk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MalfunctionRisk</p>
+  <div class="comment">
+   <span class="markdown">Riesgo de fallo de funcionamiento</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk">Riesgo</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#RSK-009" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-009">RSK-009</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="NearMissIncident">
+  <h3>NearMissIncident<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#NearMissIncident</p>
+  <div class="comment">
+   <span class="markdown">Incidente de casi pérdida</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Incident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident">Incidente</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Recall">
+  <h3>Recall<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Recall</p>
+  <div class="comment">
+   <span class="markdown">Retirada de dispositivos</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#FSCA" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#FSCA-002" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-002">FSCA-002</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Risk">
+  <h3>Riesgo<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk</p>
+  <div class="comment">
+   <span class="markdown">riesgos identificados según la nomenclatura IMDRF</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    Jlopezbaez
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#InjuryRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InjuryRisk">InjuryRisk</a> <sup class="type-c" title="class">c</sup>, <a href="#InterferenceRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InterferenceRisk">InterferenceRisk</a> <sup class="type-c" title="class">c</sup>, <a href="#MalfunctionRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MalfunctionRisk">MalfuctionRisk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasDescription" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription">hasDescription</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#asociatedToRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk">associatedToRisk</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#INC-001" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001">INC-001</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#INC-002" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002">INC-002</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#RSK-003" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-003">RSK-003</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#RSK-009" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-009">RSK-009</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SafetyAlert">
+  <h3>SafetyAlert<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SafetyAlert</p>
+  <div class="comment">
+   <span class="markdown">Alerta de seguridad</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#FSCA" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#FSCA-001" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-001">FSCA-001</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SeriousIncident">
+  <h3>SeriousIncident<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident</p>
+  <div class="comment">
+   <span class="markdown">Incidente serio</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Incident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident">Incidente</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#INC-001" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001">INC-001</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#INC-002" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002">INC-002</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="UserNotice">
+  <h3>UserNotice<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#UserNotice</p>
+  <div class="comment">
+   <span class="markdown">Aviso a los usuarios</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#FSCA" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#affectsDevice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice">affectsDevice</a></li>
+  <li><a href="#asociatedToRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk">associatedToRisk</a></li>
+  <li><a href="#derivedFromIncident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident">derivedFromIncident</a></li>
+  <li><a href="#hasManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer">fabricadoPor</a></li>
+  <li><a href="#hasCountry" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasCountry">hasCountry</a></li>
+  <li><a href="#reportedByManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer">reportedByManufacturer</a></li>
+ </ul>
+ <div class="entity" id="affectsDevice">
+  <h3>affectsDevice<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice</p>
+  <div class="comment">
+   <span class="markdown">Dispositivo implicado en el incidente</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    Jlopezbaez
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident">Incidente</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#affectsDevice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice">affectsDevice</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Device" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#asociatedToRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk">associatedToRisk</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Risk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk">Riesgo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#reportedByManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer">reportedByManufacturer</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Manufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer">Fabricante</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#hasManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer">fabricadoPor</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Manufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer">Fabricante</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="asociatedToRisk">
+  <h3>associatedToRisk<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk</p>
+  <div class="comment">
+   <span class="markdown">Riesgo al que está asociado el incidente</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    Jlopezbaez
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident">Incidente</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#affectsDevice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice">affectsDevice</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Device" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#asociatedToRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk">associatedToRisk</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Risk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk">Riesgo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#reportedByManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer">reportedByManufacturer</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Manufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer">Fabricante</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Risk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk">Riesgo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="derivedFromIncident">
+  <h3>derivedFromIncident<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident</p>
+  <div class="comment">
+   <span class="markdown">Incicdente que propicio que se llevara a cao la accion</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    Jlopezbaez
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#FSCA" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#derivedFromIncident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident">derivedFromIncident</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Incident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident">Incidente</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident">Incidente</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#affectsDevice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice">affectsDevice</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Device" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#asociatedToRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk">associatedToRisk</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Risk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk">Riesgo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#reportedByManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer">reportedByManufacturer</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Manufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer">Fabricante</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasManufacturer">
+  <h3>fabricadoPor<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer</p>
+  <div class="comment">
+   <span class="markdown">Fabricante del dispositivo</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    Jlopezbaez
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#hasManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer">fabricadoPor</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Manufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer">Fabricante</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Manufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer">Fabricante</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasCountry">
+  <h3>hasCountry<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasCountry</p>
+  <div class="comment">
+   <span class="markdown">Pais del fabricante</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2002/07/owl#topObjectProperty" target="_blank" title="http://www.w3.org/2002/07/owl#topObjectProperty">top Object Property</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Manufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer">Fabricante</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Country" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Country">Country</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="reportedByManufacturer">
+  <h3>reportedByManufacturer<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer</p>
+  <div class="comment">
+   <span class="markdown">Fabricante que reporto el incidente</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    Jlopezbaez
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident">Incidente</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#affectsDevice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice">affectsDevice</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Device" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#asociatedToRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk">associatedToRisk</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Risk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk">Riesgo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#reportedByManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer">reportedByManufacturer</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Manufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer">Fabricante</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Manufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer">Fabricante</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#hasDescription" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription">hasDescription</a></li>
+  <li><a href="#hasDeviceName" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDeviceName">hasDeviceName</a></li>
+  <li><a href="#isImplantable" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable">isImplantable</a></li>
+  <li><a href="#patientAge" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge">patientAge</a></li>
+  <li><a href="#reportDate" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportDate">reportDate</a></li>
+ </ul>
+ <div class="entity" id="hasDescription">
+  <h3>hasDescription<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription</p>
+  <div class="comment">
+   <span class="markdown">Descripción pormenorizada</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    Jlopezbaez
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#FSCA" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#Incident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident">Incidente</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#Risk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk">Riesgo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#affectsDevice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice">affectsDevice</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Device" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#asociatedToRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk">associatedToRisk</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Risk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk">Riesgo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#derivedFromIncident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident">derivedFromIncident</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Incident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident">Incidente</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#reportedByManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer">reportedByManufacturer</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Manufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer">Fabricante</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasDeviceName">
+  <h3>hasDeviceName<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDeviceName</p>
+  <div class="comment">
+   <span class="markdown">Nombredispos</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    Jlopezbaez
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#hasManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer">fabricadoPor</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Manufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer">Fabricante</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isImplantable">
+  <h3>isImplantable<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable</p>
+  <div class="comment">
+   <span class="markdown">Define si el dispositivo es implantable</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    Jlopezbaez
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#hasManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer">fabricadoPor</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Manufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer">Fabricante</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="patientAge">
+  <h3>patientAge<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge</p>
+  <div class="comment">
+   <span class="markdown">Define la edad del paciente si se conoce,. si no NA</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    Jlopezbaez
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident">Incidente</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#affectsDevice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice">affectsDevice</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Device" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#asociatedToRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk">associatedToRisk</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Risk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk">Riesgo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#reportedByManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer">reportedByManufacturer</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Manufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer">Fabricante</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#int" target="_blank" title="http://www.w3.org/2001/XMLSchema#int">int</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="reportDate">
+  <h3>reportDate<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportDate</p>
+  <div class="comment">
+   <span class="markdown">La fecha en que se reporta el incidente</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    Jlopezbaez
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident">Incidente</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#affectsDevice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice">affectsDevice</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Device" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#asociatedToRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk">associatedToRisk</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Risk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk">Riesgo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#reportedByManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer">reportedByManufacturer</a> <sup class="type-op" title="object property">op</sup> <span class="logic">only</span> <a href="#Manufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer">Fabricante</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#DEV-001" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-001">DEV-001</a></li>
+  <li><a href="#DEV-002" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-002">DEV-002</a></li>
+  <li><a href="#FSCA-001" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-001">FSCA-001</a></li>
+  <li><a href="#FSCA-002" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-002">FSCA-002</a></li>
+  <li><a href="#INC-001" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001">INC-001</a></li>
+  <li><a href="#INC-002" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002">INC-002</a></li>
+  <li><a href="#Ireland" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Ireland">Ireland</a></li>
+  <li><a href="#MAN-001" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001">MAN-001</a></li>
+  <li><a href="#MAN-002" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-002">MAN-002</a></li>
+  <li><a href="#RSK-003" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-003">RSK-003</a></li>
+  <li><a href="#RSK-009" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-009">RSK-009</a></li>
+ </ul>
+ <div class="entity" id="DEV-001">
+  <h3>DEV-001<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-001</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="#ImplantableActiveDevice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ImplantableActiveDevice">ImplantableActiveDevice</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd></dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer">fabricadoPor</a> <sup class="type-op" title="object property">op</sup> <a href="#MAN-001" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001">MAN-001</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasDeviceName" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDeviceName">hasDeviceName</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"HeartMate 3 LVAD"</span>
+   </dd>
+   <dd>
+    <a href="#isImplantable" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable">isImplantable</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"true"^^<a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a> </span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DEV-002">
+  <h3>DEV-002<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-002</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#ActiveImplant" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveImplant">Activeimplant</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="#Device" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd></dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer">fabricadoPor</a> <sup class="type-op" title="object property">op</sup> <a href="#MAN-001" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001">MAN-001</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasDeviceName" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDeviceName">hasDeviceName</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Micra AV Transcatheter Pacing System"</span>
+   </dd>
+   <dd>
+    <a href="#isImplantable" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable">isImplantable</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"true"^^<a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a> </span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="FSCA-001">
+  <h3>FSCA-001<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-001</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#FSCA" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="#SafetyAlert" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SafetyAlert">SafetyAlert</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd></dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#derivedFromIncident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident">derivedFromIncident</a> <sup class="type-op" title="object property">op</sup> <a href="#INC-001" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001">INC-001</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="FSCA-002">
+  <h3>FSCA-002<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA-002</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#FSCA" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="#Recall" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Recall">Recall</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd></dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#derivedFromIncident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident">derivedFromIncident</a> <sup class="type-op" title="object property">op</sup> <a href="#INC-002" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002">INC-002</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="INC-001">
+  <h3>INC-001<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-001</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#FSCA" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="#Incident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident">Incidente</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="#Risk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk">Riesgo</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="#SeriousIncident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident">SeriousIncident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd></dd>
+   <dd></dd>
+   <dd></dd>
+   <dd></dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#affectsDevice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice">affectsDevice</a> <sup class="type-op" title="object property">op</sup> <a href="#DEV-001" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-001">DEV-001</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#asociatedToRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk">associatedToRisk</a> <sup class="type-op" title="object property">op</sup> <a href="#RSK-003" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-003">RSK-003</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#reportedByManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer">reportedByManufacturer</a> <sup class="type-op" title="object property">op</sup> <a href="#MAN-001" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001">MAN-001</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasDescription" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription">hasDescription</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography."</span>
+   </dd>
+   <dd>
+    <a href="#patientAge" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge">patientAge</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"58"^^<a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a> </span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="INC-002">
+  <h3>INC-002<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#INC-002</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#FSCA" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="#Incident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident">Incidente</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="#Risk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk">Riesgo</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="#SeriousIncident" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident">SeriousIncident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd></dd>
+   <dd></dd>
+   <dd></dd>
+   <dd></dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#affectsDevice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice">affectsDevice</a> <sup class="type-op" title="object property">op</sup> <a href="#DEV-002" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#DEV-002">DEV-002</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#asociatedToRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk">associatedToRisk</a> <sup class="type-op" title="object property">op</sup> <a href="#RSK-009" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-009">RSK-009</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#reportedByManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer">reportedByManufacturer</a> <sup class="type-op" title="object property">op</sup> <a href="#MAN-001" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001">MAN-001</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasDescription" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasDescription">hasDescription</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Micra AV pacemaker reached elective replacement indicator 14 months earlier than expected longevity specification."</span>
+   </dd>
+   <dd>
+    <a href="#patientAge" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#patientAge">patientAge</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"72"^^<a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a> </span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Ireland">
+  <h3>Ireland<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Ireland</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Country" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Country">Country</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MAN-001">
+  <h3>MAN-001<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-001</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Manufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer">Fabricante</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasCountry" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasCountry">hasCountry</a> <sup class="type-op" title="object property">op</sup> <a href="#Ireland" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Ireland">Ireland</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MAN-002">
+  <h3>MAN-002<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MAN-002</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Manufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer">Fabricante</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RSK-003">
+  <h3>RSK-003<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-003</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#InjuryRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InjuryRisk">InjuryRisk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="#Risk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk">Riesgo</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RSK-009">
+  <h3>RSK-009<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#RSK-009</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#MalfunctionRisk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MalfunctionRisk">MalfuctionRisk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="#Risk" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk">Riesgo</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="swrlrules">
+ <h3 id="swrlrules" class="list">SWRL rules</h3>
+ <ul class="hlist">
+  <li><a href="#d4e1369">S2</a></li>
+  <li><a href="#d4e1308">S3</a></li>
+ </ul>
+ <div class="entity" id="d4e1369">
+  <h3>S2<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
+  <p><br><br><a href="#Device" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a> <sup class="type-c" title="class">c</sup>(?) , <a href="#hasManufacturer" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer">fabricadoPor</a> <sup class="type-op" title="object property">op</sup>(?,?) , <a href="#affectsDevice" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice">affectsDevice</a> <sup class="type-op" title="object property">op</sup>(?,?) -&gt; <a href="#Device" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device">Dispositivo</a> <sup class="type-c" title="class">c</sup>(?)</p>
+ </div>
+ <div class="entity" id="d4e1308">
+  <h3>S3<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
+  <p><br><br><a href="#ActiveImplant" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveImplant">Activeimplant</a> <sup class="type-c" title="class">c</sup>(?) -&gt; <a href="#isImplantable" title="http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#isImplantable">isImplantable</a> <sup class="type-dp" title="data property">dp</sup>(?,"true"^^<a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>)</p>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

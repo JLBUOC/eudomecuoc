@@ -1,0 +1,412 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Device",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "instances" : 0,
+    "subClasses" : [ "1", "2", "3" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Country",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "instances" : 0,
+    "id" : "4"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveImplant",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "instances" : 0,
+    "id" : "3",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#UserNotice",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "instances" : 0,
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SeriousIncident",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "instances" : 0,
+    "id" : "12",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Risk",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "instances" : 0,
+    "subClasses" : [ "13", "14", "15" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#MalfunctionRisk",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "instances" : 0,
+    "id" : "14",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InjuryRisk",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "instances" : 0,
+    "id" : "15",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#SafetyAlert",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "instances" : 0,
+    "id" : "20",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Incident",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "instances" : 0,
+    "subClasses" : [ "24", "12" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InterferenceRisk",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "instances" : 0,
+    "id" : "13",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#NearMissIncident",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "instances" : 0,
+    "id" : "24",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Manufacturer",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "instances" : 0,
+    "id" : "7"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ActiveDevice",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "instances" : 0,
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#FSCA",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "instances" : 0,
+    "subClasses" : [ "8", "27", "35", "20" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#Recall",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "instances" : 0,
+    "id" : "27",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#ImplantableActiveDevice",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "instances" : 0,
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#InSituCorrection",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "instances" : 0,
+    "id" : "35",
+    "superClasses" : [ "9" ]
+  } ],
+  "property" : [ {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "19",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "21",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "22",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "23",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "28",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "32",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "33",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "34",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "36",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "37",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "38",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "39",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "40",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "41",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "functional", "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "11",
+    "domain" : "6",
+    "attributes" : [ "functional", "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "6",
+    "domain" : "8",
+    "attributes" : [ "allValues", "functional", "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "0",
+    "domain" : "6",
+    "attributes" : [ "functional", "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "0",
+    "domain" : "12",
+    "attributes" : [ "allValues", "functional", "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "6",
+    "domain" : "20",
+    "attributes" : [ "allValues", "functional", "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "7",
+    "domain" : "12",
+    "attributes" : [ "allValues", "functional", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "11",
+    "domain" : "12",
+    "attributes" : [ "allValues", "functional", "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "7",
+    "domain" : "24",
+    "attributes" : [ "allValues", "functional", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "6",
+    "domain" : "9",
+    "attributes" : [ "functional", "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "6",
+    "domain" : "27",
+    "attributes" : [ "allValues", "functional", "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "0",
+    "domain" : "24",
+    "attributes" : [ "allValues", "functional", "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasCountry",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "4",
+    "superproperty" : [ "30" ],
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "7",
+    "domain" : "0",
+    "attributes" : [ "allValues", "functional", "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "6",
+    "domain" : "9",
+    "attributes" : [ "allValues", "functional", "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "7",
+    "domain" : "2",
+    "attributes" : [ "allValues", "functional", "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#derivedFromIncident",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "6",
+    "domain" : "35",
+    "attributes" : [ "allValues", "functional", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#affectsDevice",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "0",
+    "domain" : "6",
+    "attributes" : [ "allValues", "functional", "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#reportedByManufacturer",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "allValues", "functional", "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "11",
+    "domain" : "6",
+    "attributes" : [ "allValues", "functional", "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#asociatedToRisk",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "11",
+    "domain" : "24",
+    "attributes" : [ "allValues", "functional", "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "7",
+    "domain" : "1",
+    "attributes" : [ "allValues", "functional", "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "7",
+    "domain" : "3",
+    "attributes" : [ "allValues", "functional", "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC#hasManufacturer",
+    "baseIri" : "http://www.semanticweb.org/chech/ontologies/2026/3/EUDAMEDUOC",
+    "range" : "7",
+    "domain" : "0",
+    "attributes" : [ "functional", "object" ],
+    "id" : "42"
+  } ]
+}
